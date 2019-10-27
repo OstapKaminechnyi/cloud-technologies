@@ -1,0 +1,4 @@
+com\retail\controllers\PanelController.class
+com\retail\domain\Panel.class
+com\retail\repos\PanelRepo.class
+com\retail\RetailApplication.class
