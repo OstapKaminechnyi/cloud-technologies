@@ -1,0 +1,11 @@
+runtime: java11
+instance_class: F2
+
+# Explicitly set the memory limit and maximum heap size for the Spring Boot app
+
+env_variables:
+  ENDPOINTS_SERVICE_NAME: iot-sensors-xwm423rbya-uc.a.run.app
+  ENDPOINTS_SERVICE_VERSION: 2020-01-14r1
+  PUBSUB_VERIFICATION_TOKEN: 5555zzz
+
+# [END gae_java11_helloworld_yaml]

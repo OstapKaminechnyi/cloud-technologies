@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retail</title>
+    <link rel="stylesheet" href="/static/style.scss">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="collapse" id="collapseExample">
+        <div class="form-group mt-3">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="amount" placeholder="Amount"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="section" placeholder="Section"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="manufacturer" placeholder="Manufacturer" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="technicalCharacteristics" placeholder="Technical Characteristics" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="address" placeholder="Address" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="image" placeholder="image" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{#panels}}
+    <div class="card-group">
+        <div class="card">
+            <img src="{{image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{manufacturer}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{amount}}</li>
+                <li class="list-group-item">{{section}}</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">{{address}}</a>
+            </div>
+        </div>
+    </div>
+    {{/panels}}
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
