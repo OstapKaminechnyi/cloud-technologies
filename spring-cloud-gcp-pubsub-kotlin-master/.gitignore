@@ -1,5 +1,5 @@
 HELP.md
-/target/
+target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -24,4 +24,4 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /build/
-*.json
+/My First Project-49306d9e4b5e.json
