@@ -22,7 +22,7 @@ class SensorController(val pubSubTemplate: PubSubTemplate) {
     fun publishMessage(@RequestBody message: Sensor): ResponseEntity<Sensor> {
         return try {
             this.pubSubTemplate.publish(topic, gson.toJson(message)).get()
-            ResponseEntity.ok(message);
+            ResponseEntity.ok(message)
         } catch (t: Throwable) {
             ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
         }

@@ -10,7 +10,7 @@ produces:
   - application/json
 x-google-backend:
     address: https://circular-light-265709.appspot.com
-  jwt_audience: 994414802550-t0rc8hisebaue4g785bi8mr6uekkcr46.apps.googleusercontent.com
+#  jwt_audience: 994414802550-t0rc8hisebaue4g785bi8mr6uekkcr46.apps.googleusercontent.com
 paths:
   /publishMessage :
     get:
